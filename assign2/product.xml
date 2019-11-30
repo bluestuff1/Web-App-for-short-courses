@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assignment Part 1" />
+  <meta name="keywords" content="index, klim, institute, short, courses" />
+  <meta name="author" content="Klim Huynh"  />
+  <!--Viewport set to scale 1.0-->
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <!-- Reference to external style CSS file -->
+  <link href="styles/style.css" rel="stylesheet" />
+  <link href="styles/responsive.css" rel="stylesheet" media="screen	and (max-width: 1024px)" />
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+  <title>Product</title>
+ </head>
+
+<body>
+	<header>
+		<!-- Logo -->
+		<!-- Redirects to index.html -->
+		<!-- Free Logo Creator & Logo Generator - Make a Logo In Seconds, viewed 24 August, 2018, <https://logojoy.com/>. -->  
+		<p><a href="index.html"> <img src="images/logo.png" alt="Short training courses logo" /></a></p>
+		<h1 id="product-h1">Product</h1>
+	</header>
+		<!--Main Menu bar-->
+		<nav>
+			<a href="index.html">Home</a> 
+			<a href="product.html">Product</a> 
+			<a href="enquire.html">Enquire</a>
+			<a href="about.html">About</a>
+			<a href="enhancements.html">Enhancements</a>
+			<a href="enhancements2.html">JavaScript Enhancements</a>
+		</nav>
+	<hr	/>
+<!-- A section with an ordered list -->
+<section id="product-content">
+<h2 id="product-heading">Why should I study here?</h2>	
+	<ol id="product-ol">
+		<li>It's ranked #1 in the world</li>
+		<li>Most satisfied students</li>
+		<li>To upskill</li>
+		<li>Strong ties to the industry</li>
+		<li>The prime minister of Australia studied here</li>
+			
+	</ol>
+</section>
+	
+<article>
+<h2 id="product-heading2">Courses</h2>
+	<!-- Section on business -->
+	<section id="section1">
+		<!-- An image on business -->
+		<!-- Photo of Person Holding Black Pen · Free Stock Photo, viewed 28 August, 2018, <https://www.pexels.com/photo/photo-of-person-holding-black-pen-990818/>. -->
+		<img id="product-image1" src="images/business1.jpeg" alt="business"/>
+		<h3>Business</h3>
+		<!-- A description on business -->
+		<!-- Why Study Business?, viewed 28 August, 2018, <https://www.topuniversities.com/courses/business-management-studies/why-study-business>. -->
+		<p>Business and related subjects (such as the FAME group <span>&#8211;</span> finance, accounting, management and economics) are among the most popular fields of study at universities worldwide, particularly at graduate level. You might have some vague ideas about why this is the case <span>&#8211;</span> business graduates are in high demand worldwide, business touches on pretty much every aspect of modern human society, careers with a business degree are diverse and often highly paid <span>&#8211;</span> and these assumptions are likely to be largely true. Business graduates go on to work in myriad different sectors, and not all of them are those you would typically associate with business in general. More obvious careers with a business degree include roles in accounting and finance departments, which take in large numbers of business degree graduates. Other sectors with high demand for business graduates include marketing and advertising, as well as retail, sales, human resources and business consultancy. The diversity and plenitude of careers with a business degree underlies the subject<span>&#39;</span>s appeal for many students.</p>
+	</section>
+	
+	<!-- Section on building and construction -->
+	<section id="section2">
+		<!-- An image of construction -->
+		<!-- 2 Man on Construction Site during Daytime · Free Stock Photo, viewed 28 August, 2018, <https://www.pexels.com/photo/2-man-on-construction-site-during-daytime-159306/>. -->
+		<img src="images/construction1.jpg" alt="construction"/>
+		<h3>Building and Construction</h3>
+		<!-- A description on building and construction -->
+		<!-- Building and Construction | Victoria University | Melbourne Australia, viewed 28 August, 2018, <https://www.vu.edu.au/study-at-vu/courses/browse-for-courses/by-topic/engineering-and-science/building-and-construction>. -->
+		<p>Whether you are interested in specialising your career or just improving your handyperson skills, we have many courses to help get you started. We are focused on the delivery of apprenticeship, pre<span>&#8211;</span>apprenticeship, skills recognition and other programs tailored to industry needs. Gain skills to take you further you can study our huge range of short courses.</p>
+		<p>If you are an aspiring or working tradesperson, here is your foundation for success. This is your first step towards starting your own building business and preparing for the builders registration. We understand that you could be a busy tradie by day, that<span>&#39;</span>s why this course offers greater flexibility in terms of how you would like to pursue this course</p>
+		<p>During your studies you will learn how to:</p>
+			<!-- An unordered list -->
+			<ul id="product-ul">
+				<li>Apply building codes and standards to job sites</li>
+				<li>Prepare contracts and evaluate project tenders</li>
+				<li>Produce cost estimates</li>
+				<li>Innovate in sustainable design and construction techniques</li>
+				<li>Manage medium rise construction projects</li>
+				<li>Manage subcontractors</li>
+			</ul>
+		
+	</section>
+	
+	<!-- Section on hospitality -->
+	<section id="section3">
+		<!-- An image of hospitality -->
+		<!-- Free stock photo of bar, drinks, hotel, viewed 28 August, 2018, <https://www.pexels.com/photo/people-hotel-bar-drinks-6490/>. -->
+		<img src="images/bar1.jpg" alt="bar"/>
+		<h3 id="product-h3">Hospitality</h3>
+		<!-- A description on hospitality -->
+		<!-- Why Study Hospitality in Australia? - AECC Global, viewed 28 August, 2018, <https://www.aeccglobal.com.au/blog/why-study-hospitality-in-australia/>. -->
+		<p>Graduates of hospitality degree in Australia are amongst the highly preferred applicants by the industry, assuring its graduates of competitive advantage. Having a globally recognised Australian education allows you to open your wings to explore the world with confidence to fulfil your career goals.</p>
+		<p>The world is your oyster: Students who completed hospitality degree in Australia have boundless opportunities. From restaurants to travel agencies, to hotels and resorts, hospitality degree holders enjoy full array of job openings in the vast industries of travel and hospitality.  Below are a few of career options:</p>
+		<!-- Unordered list -->
+		<ul>
+			<li>Restaurant Manager</li>
+			<li>Resort Manager</li>
+			<li>Tourist / Cultural Tourist Development Manager</li>
+			<li>Travel Consultant</li>
+			<li>Hotel Manager</li>
+			<li>Airline or Cruise Manager</li>
+			<li>Leisure, Sports and Events Manager</li>
+		</ul>	
+	</section>
+	<!-- Aside -->
+	<aside id="ad">
+	<!-- A burger ad that has a hyperlink to the Burger King site -->
+	<!-- Anon 2018, viewed 28 August, 2018, <https://cdn-images-1.medium.com/max/1600/1*ibN0ptxrg6LkZ5DZbKv2YA.png>. -->
+         <p><a href="https://www.bk.com/"><img src="images/ad1.png" alt="construction"/></a></p>
+    </aside>
+
+	<footer>
+		<p><a href="https://www.swinburne.edu.au/">|Copyright|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Legal|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Privacy|</a></p>
+	</footer>
+</article>		
+</body>
+</html>

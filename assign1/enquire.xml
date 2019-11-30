@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assignment Part 1" />
+  <meta name="keywords" content="index, klim, institute, short, courses" />
+  <meta name="author" content="Klim Huynh"  />
+  <!--Viewport set to scale 1.0-->
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <!-- Reference to external style CSS file -->
+  <link href="styles/style.css" rel="stylesheet" />
+  <!--Reference to external responsive CSS file-->
+  <link href="styles/responsive.css" rel="stylesheet" media="screen	and (max-width: 1024px)" />
+  <title>Enquire</title>
+ </head>
+ 
+ <body>
+	<header>
+		<!-- Logo -->
+		<!-- Redirects to index.html -->
+		<!-- Free Logo Creator & Logo Generator - Make a Logo In Seconds, viewed 24 August, 2018, <https://logojoy.com/>. --> 
+		<p><a href="index.html"> <img src="images/logo.png" alt="Short training courses logo" /></a></p>
+		<h1>Enquire</h1>
+	</header>
+		<nav>
+			<a href="index.html">Home</a> 
+			<a href="product.html">Product</a> 
+			<a href="enquire.html">Enquire</a>
+			<a href="about.html">About</a>
+			<a href="enhancements.html">Enhancements</a>			 
+		</nav>
+	<hr	/>
+<!-- A form -->
+<section id="enquire-section">
+<h2>Fill out this form</h2>
+	<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+		<p><label for="studentid">Student ID (optional)</label> 
+			<input type="text" name= "studentid" id="studentid" pattern="\d{7,10}"/>
+		</p>
+		<p><label for="Firstname">First name:</label>
+			<input type="text" name= "Firstname" id="Firstname" maxlength="25" pattern="^[a-zA-Z]+$" required="required"/>
+		</p>
+		<p><label for="Lastname">Last name:</label>
+			<input type="text" name= "Lastname" id="Lastname" maxlength="25" pattern="^[a-zA-Z]+$" required="required"/>
+		</p>
+		<p><label for="emailad">Email address</label>
+			<input type="text" name= "emailad" id="emailad" required="required"/>
+		</p>
+		<fieldset id="enquire-fieldset">
+			<legend>Address:</legend>				
+			<p><label for="street">Street address</label> 
+			<input type="text" name= "street" id="street" maxlength="40" required="required"/>
+			</p>					
+			<p><label for="suburb">Suburb/Town</label> 
+			<input type="text" name= "suburb" id="suburb" maxlength="20" required="required"/>
+			</p>	
+			<p><label for="state">State</label> 
+			<select name="state" id="state">
+				<option value=""> Please Select</option>
+				<option value="vic">VIC</option>			
+				<option value="nsw">NSW</option>
+				<option value="qld">QLD</option>
+				<option value="nt">NT</option>
+				<option value="wa">WA</option>
+				<option value="sa">SA</option>
+				<option value="tas">TAS</option>
+				<option value="act">ACT</option>
+			</select>				
+			</p>
+			
+			<p>Postcode
+			<input type="text" name= "postcode" id="postcode" pattern="\d{4}" required="required"/>
+			</p>	
+		</fieldset>
+		
+		<p><label for="telephone">Telephone number</label>
+		<input type="tel" name= "telephone" id="telephone" maxlength="10" placeholder="0300000000" required="required"/>
+		</p>
+		
+		<p id="contact">Preferred Contact</p> 
+		<p>
+			<label for="email">Email</label> 
+			<input type="radio" id="email" name="preferred" value="email" required="required"/>
+			<label for="post">Post</label> 
+			<input type="radio" id="post" name="preferred" value="post" required="required"/>
+			<label for="phone">Phone</label> 
+			<input type="radio" id="phone" name="preferred" value="phone" required="required"/>
+		</p>
+		
+		<p><label for="products">Products</label> 
+			<select name="products" id="products">
+				<option value=""> Please Select</option>
+				<option value="Bookkeeping - Level 1">Bookkeeping - Level 1</option>			
+				<option value="Plasterboard Installation">Plasterboard Installation</option>
+				<option value="Bartending - Level 3">Bartending - Level 3</option>
+			</select>
+		</p>
+			
+		<p id="features">Product features</p>
+		<p><label for="general">General</label> 
+			<input type="checkbox" id="general" name="features[]" value="general" checked="checked"/>
+				
+		<label for="fees">Fees</label> 
+			<input type="checkbox" id="fees" name="category[]" value="fees"/>
+				
+		<label for="online">Studying Online</label> 
+			<input type="checkbox" id="online" name="category[]" value="online"/>
+			
+		<label for="working">Working with Students</label> 
+			<input type="checkbox" id="working" name="category[]" value="working"/>
+		</p>
+		<p><label for="comment">Comment</label>
+		<br	/>
+		<textarea id="comment" name="comment" placeholder="Write description of your enquiry here..." rows="4" cols="40"></textarea>			
+		</p>
+		
+		<p><input type= "submit" id="submit" value="Submit"/>
+			<input type= "reset" id="reset" value="Reset Form"/>
+		</p>
+</form>	
+</section>
+ <footer>
+		<p><a href="https://www.swinburne.edu.au/">|Copyright|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Legal|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Privacy|</a></p>
+	</footer>	
+ </body>
+
+ </html>
