@@ -1,0 +1,313 @@
+/*
+filename: style.css
+author: Klim Huynh
+created: 24/08/2018
+last modified: 26/09/2018
+description: index.html, product.html, enquire.html, about.html, enhancements.html
+*/
+
+/* Makes the body's font calibri and set a background image */
+body	{
+	font-family: calibri;
+	/* Person in Blue Shirt Wearing Brown Beanie Writing on White Dry Erase Board · Free Stock Photo, viewed 28 August, 2018, <https://www.pexels.com/photo/person-in-blue-shirt-wearing-brown-beanie-writing-on-white-dry-erase-board-7368/>. */
+	background-image: url("images/learn1.jpg");	
+
+}
+
+/* Flexbox used to align the footer to center */
+/* A Complete Guide to Flexbox | CSS-Tricks, viewed 28 August, 2018, <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>. */
+footer	{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  line-height: 2px;
+  font-size: 12px;
+}
+
+/* Element selector */
+h1	{
+	font-family: "Times New Roman", san-serif;
+	font-size: 150%;
+}
+
+/* Gives each section 20% of the page width */
+/* Stretches the lines so that each line has equal width */
+/* #id Selector */
+#section1, #section2, #section3	{
+	border: 1px double;
+	float: left;
+	width: 20%;
+	text-align: justify;
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color: white;
+}
+
+/* Grouping selector */
+table, th, td {
+	border: 2px solid black;
+}
+
+/* Table floats to the left on product.html*/
+/* Has a border, margin, padding */
+#tables	{
+	float: left; 
+	margin: 1em;
+	padding: 1em;
+	clear: both;
+	background-color: white;
+	border: 1px solid black;
+	
+}
+/* Aside floats to the right */
+/* Has a border, margin, padding, 25% width of the screen */
+/* Background color in RGB format */
+aside	{
+	border: 2px inset purple;
+	border-radius: 15px;
+	margin: 1em;
+	padding: 1em;
+	width: 25%;
+	background-color:rgb(245,239,232); 
+	float: right;
+	box-shadow: 5px 10px;
+}
+
+/* Contextual selector */
+table th	{
+	background-color: coral;
+}
+
+table td	{
+	background-color: orange;
+}
+
+/* Red background colour for table head on the about.html */
+/* .class selector */
+.table-head	{
+	font-weight: bold;
+	margin: 0 auto;
+	background-color: #FF0000
+}
+
+/* Magenta background colour for table data on the about.html */
+.table-data	{
+	background-color: #FF00FF;
+}
+
+nav	{
+	background-color: white;
+	width: 100%;
+	line-height: 200%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+}
+
+nav a {
+	font-size: 24px;
+	float: left;
+	display: block;
+    color: darkgrey;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+}
+
+/* Pseudo Class */
+nav a:hover {
+	background-color:lightgreen;
+}
+
+/* My details and timetable in the about.html*/
+.about-sections	{
+	border: 1px double;
+	float: left;
+	width: 40%;
+	text-align: center;
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color: white;
+}
+
+#enquire-section, #fix_order-section, #fix_order-section2	{
+	background-color: white;
+	border: 1px solid black;
+	margin: 1em;
+	padding: 1em;
+}
+
+#home-content, #product-content {
+	background-color: white;
+	margin: 1em auto;
+	padding: 1em;
+	max-width: 50%;
+	border: 1px dotted black;
+	display: block;
+}
+
+#enhancements-content	{
+	background-color: white;
+	margin: 0 auto;
+	padding: 1em;
+	max-width: 50%;
+	border: 2px double green;
+	display: block;
+}
+
+#home-heading, #product-heading, #enhancements-heading, #enhancements2-heading	{
+	text-align: center;
+}
+
+h1 {
+	background-color: white;
+}
+
+#product-heading2	{
+	background-color: white;
+	max-width: 67%;
+}
+
+/* Scales the image to the size of the page */
+img	{
+	max-width: 100%;
+	display: block;	
+	margin: 0 auto;
+}
+
+/* Styled dl */
+/* dt tag floats to the left, scales to 10% of the page and has dark blue font colour */
+dt {
+    float:left;
+    width:10%;
+	color: darkblue;
+}
+
+/* Pseudo Element */
+dt::first-letter {
+	font-weight:bold; 
+	font-size:105%
+}
+
+/* About.html */
+.my-name	{
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+.my-id	{
+	text-align: right;
+	font-family: arial, san-serif;
+}
+
+.my-course	{
+	color: rgb(60, 179, 113);
+}
+
+/* Adds a border with double for the top and bottom. Groove for left and right border. Floats to the right on About.html */
+#my-photo	{
+	float: right;
+	border-style: double groove;
+	padding: 20px;
+	background-color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* CSS for Enhancements.html */
+/* animation | CSS-Tricks, viewed 28 August, 2018, <https://css-tricks.com/almanac/properties/a/animation/>. */
+#element {
+  width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
+}
+
+/* Colour changes 4 times */
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  
+  25%	{
+	  background-color: #16F1B4;
+  }
+  
+  50%	{
+	  background-color: #256645;
+  }
+  
+  100% {
+    background-color: #FF4136;
+  }
+}
+
+/* Scales the height to 100% */
+/* Without this, the CSS animation won't use 100% of screen height */
+html, body {
+  height: 100%;
+}
+
+/* Reflection in about.html */
+#reflection	{
+	clear: both;
+	border: 1px solid black;
+	margin:1em;
+	padding: 1em;
+	background-color: white;
+}
+
+/* HTML + CSS requirement in about.html */
+.requirements	{
+	clear:both;
+	border: 1px solid black;
+	margin: 1em;
+	padding: 1em;
+	background-color: white;
+}
+
+#timer {
+	float: right;
+	margin: 7px 20px 0px 0px;
+}
+
+header p {
+	padding: 5px;
+	margin-top: 100px;
+}
+
+#autoSlide {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+#autoSlide img {
+	width: 100%;
+}
+
+.mySlides {
+	display:none;
+}
+
+#payment-section, #fix_order-section, #manager-section {
+	background-color: white;
+	height: max-height;
+}
+
+#enhancements2-section, #enhancements3-section {
+	background-color: white;
+	height: 100%;
+}
+
+#fix_order-section {
+	text-align: center;
+}
+
+#note {
+	font-size: 11px;
+}
+
+#link-back {
+	font-size: 30px;
+}

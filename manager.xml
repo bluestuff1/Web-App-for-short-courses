@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assignment Part 3" />
+  <meta name="keywords" content="index, klim, institute, short, courses" />
+  <meta name="author" content="Klim Huynh"  />
+  <!--Viewport set to scale 1.0-->
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <!-- Reference to external style CSS file -->
+  <link href="styles/style.css" rel="stylesheet" />
+  <!--Reference to external responsive CSS file-->
+  <link href="styles/responsive.css" rel="stylesheet" media="screen	and (max-width: 1024px)" />
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+  <title>Fix Order</title>
+ </head>
+
+<body>
+	<header id="index-header">
+		<!-- Logo -->
+		<!-- Redirects to index.php -->
+		<!-- Free Logo Creator & Logo Generator - Make a Logo In Seconds, viewed 24 August, 2018, <https://logojoy.com/>. -->
+		<p><a href="index.php"> <img src="images/logo.png" alt="Short training courses logo" /></a></p>
+	</header><nav>
+	<a href="index.php">Home</a> 
+	<a href="product.php">Product</a> 
+	<a href="enquire.php">Enquire</a>
+	<a href="about.php">About</a>
+	<a href="enhancements.php">Enhancements</a>
+	<a href="enhancements2.php">JavaScript Enhancements</a>
+	<a href="manager.php">Manage</a>
+	<a href="enhancements3.php">PHP Enhancements</a>
+</nav><h1>Manager</h1>
+<hr />
+
+<section id = "manager-section">
+<form method="post" action="manager.php">
+
+<fieldset>
+<fieldset><legend>Search Order Details</legend>
+	<p class="row">	<label for="order_id">Order number: </label>
+		<input type="text" name="order_id" id="order_id" /></p>
+	<p class="row">	<label for="firstName">First Name: </label>
+		<input type="text" name="firstName" id="firstName" /></p>
+	<p class="row">	<label for="lastName">Last Name: </label>
+		<input type="text" name="lastName" id="lastName" /></p>
+
+	
+	<p><label for="products">Sort by products: </label> 
+		<select name="products" id="products">
+			<option value=""> Please Select</option>
+			<option value="Bookkeeping - Level 1">Bookkeeping - Level 1</option>			
+			<option value="Plasterboard Installation">Plasterboard Installation</option>
+			<option value="Bartending - Level 3">Bartending - Level 3</option>
+		</select>				
+		</p>
+		
+		
+</fieldset>
+<br />
+<fieldset><legend>Others</legend>
+	<p><label for="sort">Sort/Display </label> 
+	<select name="sort" id="sort">
+		<option value=""> Please Select</option>
+		<option value="sort_pending">Display Pending Orders</option>			
+		<option value="sort_cost">Sort by Order Cost</option>
+	</select>				
+	</p>
+</fieldset>
+
+<fieldset><legend>Update order</legend>
+	<p class="row">	<label for="order_id_update">Order ID: </label>
+		<input type="text" name="order_id_update" id="order_id_update" /></p>
+	<p class="row">	<label for="lastName_update">Last Name: </label>
+		<input type="text" name="lastName_update" id="lastName_update" /></p>
+
+	<p><label for="order_status">Order: </label> 
+	<select name="order_status" id="order_status">
+		<option value=""> Please Select</option>
+		<option value="PENDING">PENDING</option>
+		<option value="FULFILLED">FULFILLED</option>
+		<option value="PAID">PAID</option>
+		<option value="ARCHIVED">ARCHIVED</option>
+		
+	</select>				
+	</p>
+</fieldset>
+
+<fieldset><legend>Delete order</legend>
+	<p class="row">	<label for="order_id_delete">Order ID: </label>
+		<input type="text" name="order_id_delete" id="order_id_delete" /></p>
+	<p class="row">	<label for="lastName_delete">Last Name: </label>
+		<input type="text" name="lastName_delete" id="lastName_delete" /></p>
+		
+<br/>
+<p id = "note">Note: Only pending orders can be cancelled</p>
+</fieldset>
+	<p><input type="submit" value="Submit" /> 
+	<input type= "reset" id="reset" value="Reset Form"/> 
+	</p>
+</fieldset>
+
+</form>
+
+<h2>You last logged in on Oct,23,2018 11:06:51 PM</h2></section>
+<br />
+	
+
+<footer>
+		<p><a href="https://www.swinburne.edu.au/">|Copyright|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Legal|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Privacy|</a></p>
+</footer>
+</body>
+</html>

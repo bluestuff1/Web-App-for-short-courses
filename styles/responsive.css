@@ -1,0 +1,35 @@
+/*
+filename: responsive.css
+author: Klim Huynh
+created: 28/08/2018
+last modified: 28/08/2018
+description: index.html, product.html, enquire.html, about.html, enhancements.html
+*/
+
+/* media query for display: over 500 */
+
+@media screen and (min-width: 31.25em) {
+	nav ul li	{
+		width: 33%;
+	}
+	#section1	{
+		width: 43%;
+	}
+	#section2	{
+		width: 43%;
+	}
+	#section3	{
+		clear: both;
+		float: none;
+		width: 90%;
+		margin: 0 1em 1em 1.5em;
+	}
+	
+	aside	{
+		display: none;
+	}
+	
+	article	{
+		min-width: 600px;
+	}
+}

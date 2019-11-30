@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assignment Part 3" />
+  <meta name="keywords" content="index, klim, institute, short, courses" />
+  <meta name="author" content="Klim Huynh"  />
+  <!--Viewport set to scale 1.0-->
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <!-- Reference to external style CSS file -->
+  <link href="styles/style.css" rel="stylesheet" />
+  <!--Reference to external responsive CSS file-->
+  <link href="styles/responsive.css" rel="stylesheet" media="screen	and (max-width: 1024px)" />
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+  <title>Receipt</title>
+ </head>
+ 
+<body>
+
+	<header id="index-header">
+		<!-- Logo -->
+		<!-- Redirects to index.php -->
+		<!-- Free Logo Creator & Logo Generator - Make a Logo In Seconds, viewed 24 August, 2018, <https://logojoy.com/>. -->
+		<p><a href="index.php"> <img src="images/logo.png" alt="Short training courses logo" /></a></p>
+	</header><nav>
+	<a href="index.php">Home</a> 
+	<a href="product.php">Product</a> 
+	<a href="enquire.php">Enquire</a>
+	<a href="about.php">About</a>
+	<a href="enhancements.php">Enhancements</a>
+	<a href="enhancements2.php">JavaScript Enhancements</a>
+	<a href="manager.php">Manage</a>
+	<a href="enhancements3.php">PHP Enhancements</a>
+</nav>
+<h1>Receipt</h1>
+<table>
+<tr>
+ <th scope="col">order_id</th>
+ <td>1</td>
+ </tr>
+<tr>
+ <th scope="col">student_id</th>
+ <td>111111111</td>
+ </tr>
+<tr>
+ <th scope="col">firstName</th>
+ <td>bob</td>
+ </tr>
+<tr>
+ <th scope="col">lastName</th>
+ <td>phil</td>
+ </tr>
+<tr>
+ <th scope="col">emailAd</th>
+ <td>k@k.com</td>
+ </tr>
+<tr>
+ <th scope="col">street</th>
+ <td>21 Fake St</td>
+ </tr>
+<tr>
+ <th scope="col">suburb</th>
+ <td>here</td>
+ </tr>
+<tr>
+ <th scope="col">state</th>
+ <td>vic</td>
+ </tr>
+<tr>
+ <th scope="col">postcode</th>
+ <td>3000</td>
+ </tr>
+<tr>
+ <th scope="col">delStreet</th>
+ <td>21 Fake St</td>
+ </tr>
+<tr>
+ <th scope="col">delSuburb</th>
+ <td>here</td>
+ </tr>
+<tr>
+ <th scope="col">delPostcode</th>
+ <td>3000</td>
+ </tr>
+<tr>
+ <th scope="col">telephone</th>
+ <td>300007854</td>
+ </tr>
+<tr>
+ <th scope="col">prefer</th>
+ <td>phone</td>
+ </tr>
+<tr>
+ <th scope="col">products</th>
+ <td>Bookkeeping - Level 1</td>
+ </tr>
+<tr>
+ <th scope="col">quantity</th>
+ <td>3</td>
+ </tr>
+<tr>
+ <th scope="col">features</th>
+ <td>general online</td>
+ </tr>
+<tr>
+ <th scope="col">comment</th>
+ <td>hello</td>
+ </tr>
+<tr>
+ <th scope="col">cost</th>
+ <td>1200</td>
+ </tr>
+<tr>
+ <th scope="col">cardType</th>
+ <td>visa</td>
+ </tr>
+<tr>
+ <th scope="col">cardName</th>
+ <td>****</td>
+ </tr>
+<tr>
+ <th scope="col">cardNumber</th>
+ <td>****</td>
+ </tr>
+<tr>
+ <th scope="col">cardExpiry</th>
+ <td>****</td>
+ </tr>
+<tr>
+ <th scope="col">cardVerify</th>
+ <td>****</td>
+ </tr>
+<tr>
+ <th scope="col">order_cost</th>
+ <td>1200</td>
+ </tr>
+<tr>
+ <th scope="col">order_time</th>
+ <td>2018-10-23 23:13:25</td>
+ </tr>
+<tr>
+ <th scope="col">order_status</th>
+ <td>PENDING</td>
+ </tr>
+</table>
+ 
+<footer>
+		<p><a href="https://www.swinburne.edu.au/">|Copyright|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Legal|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Privacy|</a></p>
+</footer>
+</body>
+</html>

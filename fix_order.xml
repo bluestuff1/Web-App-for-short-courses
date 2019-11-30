@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Assignment Part 3" />
+  <meta name="keywords" content="index, klim, institute, short, courses" />
+  <meta name="author" content="Klim Huynh"  />
+  <!--Viewport set to scale 1.0-->
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <!-- Reference to external style CSS file -->
+  <link href="styles/style.css" rel="stylesheet" />
+  <!--Reference to external responsive CSS file-->
+  <link href="styles/responsive.css" rel="stylesheet" media="screen	and (max-width: 1024px)" />
+  <script src="scripts/part2.js"></script>
+  <script src="scripts/enhancements.js"></script>
+  <title>Fix Order</title>
+ </head>
+
+<body>
+
+	<header id="index-header">
+		<!-- Logo -->
+		<!-- Redirects to index.php -->
+		<!-- Free Logo Creator & Logo Generator - Make a Logo In Seconds, viewed 24 August, 2018, <https://logojoy.com/>. -->
+		<p><a href="index.php"> <img src="images/logo.png" alt="Short training courses logo" /></a></p>
+	</header><nav>
+	<a href="index.php">Home</a> 
+	<a href="product.php">Product</a> 
+	<a href="enquire.php">Enquire</a>
+	<a href="about.php">About</a>
+	<a href="enhancements.php">Enhancements</a>
+	<a href="enhancements2.php">JavaScript Enhancements</a>
+	<a href="manager.php">Manage</a>
+	<a href="enhancements3.php">PHP Enhancements</a>
+</nav>
+
+<form method="post" action="process_order.php" novalidate="novalidate">
+
+<section id="fix_order-section">
+<h2>Errors</h2>
+
+<br />
+<b>Notice</b>:  Undefined index: errMsg in <b>/home/students/accounts/s101634015/cos10011/www/htdocs/assign3/fix_order.php</b> on line <b>40</b><br />
+
+</section>
+
+<section id="fix_order-section2">
+<p><label for="studentId">Student ID (optional) </label>
+<input type="text" name = "studentId" id="studentId" value="111111111" pattern="\d{7,10}"/></p><p><label for="firstName">First name: </label>
+<input type="text" name = "firstName" id="firstName" value="bob" maxlength="25" pattern="^[a-zA-Z]+$" required="required"/></p><p><label for="lastName">Last name: </label>
+<input type="text" name = "lastName" id="lastName" value="phil" maxlength="25" pattern="^[a-zA-Z]+$" required="required"/></p><p><label for="emailAd">Email Address: </label>
+<input type="text" name = "emailAd" id="emailAd" value="k@k.com" required="required"/></p><fieldset id="billingAddress">
+<legend>Billing Address: </legend>
+<p><label for="street">Street address</label>
+<input type="text" name="street" id="street" value="21 Fake St"/></p><p><label for="suburb">Suburb/Town</label> 
+<input type="text" name= "suburb" id="suburb" value="here" maxlength="20" required="required"/>
+</p><p><label for="state">State</label> 
+	<select name="state" id="state">
+		<option value=""> Please Select</option><option value="vic" selected="selected">VIC</option><option value="nsw">NSW</option><option value="qld">QLD</option><option value="nt">NT</option><option value="nt">NT</option><option value="wa">WA</option><option value="SA">WA</option><option value="wa">WA</option><option value="act">ACT</option></select>				
+	</p><p>Postcode
+		<input type="text" name= "postcode" id="postcode" value="3000" pattern="\d{4}" required="required"/>
+		</p>	
+	</fieldset><fieldset id="delAddress">
+			<legend>Delivery Address:</legend>				
+			<p><label for="delStreet">Street address</label> 
+			<input type="text" name= "delStreet" id="delStreet" value="21 Fake St" maxlength="40" required="required"/>
+			</p>					
+			<p><label for="delSuburb">Suburb/Town</label> 
+			<input type="text" name= "delSuburb" id="delSuburb" value="here" maxlength="20" required="required"/>
+			</p><p><label for="delState">State</label> 
+	<select name="delState" id="delState">
+		<option value=""> Please Select</option><option value="vic" selected="selected">VIC</option><option value="nsw">NSW</option><option value="qld">QLD</option><option value="nt">NT</option><option value="nt">NT</option><option value="wa">WA</option><option value="SA">WA</option><option value="wa">WA</option><option value="act">ACT</option></select>				
+	</p><p>Postcode
+		<input type="text" name= "delPostcode" id="delPostcode" value="3000" pattern="\d{4}" required="required"/>
+		</p>	
+	</fieldset><p><label for="telephone">Telephone number</label>
+		<input type="tel" name= "telephone" id="telephone" pattern="\d{10}" value="0300007854" placeholder="0300000000" required="required"/>
+		</p><fieldset id="prefer">
+		<legend>Preferred Contact</legend>
+			<label for="email">Email</label> 
+			<input type="radio" id="email" name="prefer" value="email"/><br />
+			<label for="post">Post</label> 
+			<input type="radio" id="post" name="prefer" value="post"/><br />
+			<label for="phone">Phone</label> 
+			<input type="radio" id="phone" name="prefer" value="phone"/><br />
+		</fieldset><p><label for="products">Products</label> 
+			<select name="products" id="products">
+				<option value="none"> Please Select</option><option value="Bookkeeping - Level 1" selected="selected">Bookkeeping - Level 1</option><option value="Plasterboard Installation">Plasterboard Installation</option><option value="Bartending - Level 3">Bartending - Level 3</option></select>
+		</p><p><label for="quantity">Quantity</label> 
+			<input type="number" name= "quantity" id="quantity" value="3" min="1" max="999999" required="required"/>
+		</p><p><label for="features">Features</label> 
+		<select name="features" id="features">
+			<option value=""> Please Select</option>
+			<option value="General">General</option>			
+			<option value="Fees">Fees</option>
+			<option value="Studying Online">General</option>
+			<option value="Working with students">Working with students</option>
+		</select>				
+		</p><p><label for="comment">Comment</label>
+		<br	/>
+		<textarea id="comment" name="comment"  rows="4" cols="40">hello</textarea>			
+		</p><fieldset>
+		<legend>Credit card details</legend>
+			<p><label for="cardType">Credit card type</label> 
+			<select name="cardType" id="cardType">
+				<option value="">Please select</option>
+				<option value="visa">Visa</option>
+				<option value="mastercard">Mastercard</option>
+				<option value="amex">AmEx</option>
+			</select>
+			</p><p><label for="cardName">Name on card</label> 
+			<input type="text" name= "cardName" id="cardName" maxlength="40" pattern="^[a-zA-Z ]+$" required="required"/>
+			</p><p><label for="cardNumber">Credit card number</label> 
+				<input type="text" name= "cardNumber" id="cardNumber" pattern="\d{15,16}" required="required"/>
+			</p><p><label for="cardExpiry">Credit card expiry date</label>
+				<input type="text" name="cardExpiry" id="cardExpiry" pattern="\d{2}\/\d{2}" placeholder="MM/YY" required="required"/>
+			</p><p><label for="cardVerify">Card verfication</label>
+				<input type="text" name="cardVerify" id="cardVerify" required="required"/>
+			</p>	
+	</fieldset><p><input type= "submit" id="submit" value="Submit"/>
+			<input type= "reset" id="reset" value="Reset Form"/>
+		</p>
+</section>
+</form>
+<br />
+
+<footer>
+		<p><a href="https://www.swinburne.edu.au/">|Copyright|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Legal|</a></p>
+		<p><a href="https://www.swinburne.edu.au/">|Privacy|</a></p>
+</footer></body>
+</html>
